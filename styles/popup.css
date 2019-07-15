@@ -1,0 +1,45 @@
+.popup {
+    width: 310px;
+    height: 290px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiePopup {
+    background-image: url('../resources/tiePopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: appear 0.5 0.75s backwards;
+}
+
+@keyframes appear
+{
+    0% {transform: scale(0)}
+    100% {transform: scale(1.0)}
+}
+
+.popupText {
+    font-family: grafittiFont;
+    text-align: center;
+    font-size: 35px;
+    color: lavenderblush;
+}
+
+.winPopup {
+    background-image: url('../resources/winPopup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: popupWinAnimation 1s 1.5s backwards;
+}
+
+@keyframes popupWinAnimation
+{
+    0% {transform: scale(0)}
+    30% {transform: scale(1.0)}
+    50% {transform: scale(2.0)}
+    100% {transform: scale(1.0)}
+}
